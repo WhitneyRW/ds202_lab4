@@ -1,0 +1,88 @@
+---
+title: "Lab 4 Whitney Willoz"
+author: "Whitney Willoz"
+date: "10/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Lab 4
+```{r}
+
+```
+
+# Part 1
+
+1.)The player names and opponent names should be factors.
+```{r}
+
+```
+
+2.) All offensive and defensive statistics should be numerical. The Weight column in biogrpahy should also be numeric. (Optional: Read ?across and learn to mutate multiple columns simultaneously using the across function in dplyr)
+```{r}
+
+```
+
+3.)The Height column in biography should be numeric. (Hint: Use a unit that works well)
+```{r}
+
+```
+
+4.)Add a column to both defense and offense indicating whether it is the first or the second game versus an opponent. We had a single game versus each opponent except for Oklahoma, which we played against twice. (Hint: You can use group_by(), mutate(), and row_number())
+```{r}
+
+```
+
+Printed:
+```{r}
+
+```
+
+# Part 2
+
+1.)Reformat the offClean data frame into a tidy format using pivot_longer. The type of statistic (Receiving_REC for the number of receivings, Receiving_YDS for receiving yards, etc) is added as a new key column named stat.
+```{r}
+
+```
+
+2.)Obtain the player-level offensive statistics. Namely, for each player and each type of statistics, obtain the sum of the statistics in all games.
+```{r}
+
+```
+
+3.)Show the distributions of the player-level offensive statistics. The distribution of each offensive statsitic should be shown in a separate facet. Explain the patterns you see.
+```{r}
+
+```
+
+4.)Did ISU have better offense against Oregon or Oklahoma? Answer this question by creating a scatterplot with the x- and y-axes being the receiving yards of the ISU players against each of these two opponents. A large number of receiving yards indicates good offense.
+```{r}
+
+```
+
+Now turn our attention to the player biography.
+
+4.)Separate the Hometown column into two columns, namely, the city and the state where the player comes from. Print the first few rows of these two columns. (Hint: look at the sep= argument of separate)
+```{r}
+
+```
+
+5.)How many players are there from each state?
+
+Answer:
+
+```{r}
+
+```
+
+6.)How does the performance of quarterback Brock Purdy relate to the performance of the ISU team? Comment on both the defense and offense.
+
+Answer:
+
+```{r}
+
+```
+
